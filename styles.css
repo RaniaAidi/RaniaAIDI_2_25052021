@@ -21,25 +21,97 @@ header{
 nav {   
     display: inline-block; /* pour mettre la navigation en ligne et plus les uus les uns en dessous des autres*/
     align-items: space-between;/*pour espacer les éléments de la nav.*/
-  
 } 
+
 ul{
     display: flex;
-    padding: 0px;
-    
-    
+    padding: 0px;  
 }
 
-nav li {
+li {
     display: inline-block;
     font-size: smaller;
     padding: 20px;
-    margin: 5px;
-    
+    margin: 5px;  
 }
+
     
 a:hover {
     border-top: 2px solid #0065fc;
+    text-decoration-color: #0065fc;
     padding-top: 30px;
 }
 
+a:link { 
+    text-decoration: none; 
+
+} 
+
+
+@media screen and (max-width: 1280px)
+{
+    header{
+        display: inline-block;
+        
+    }
+
+
+    #logo{
+        display: none;
+    }
+
+    nav {
+
+    }
+
+    ul{
+        background-image: url("images/logo/Reservia.svg") ;
+        background-repeat: no-repeat;
+        background-position: top 10px left;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-end;
+        border-bottom: 1px solid #e0e6f1;
+        
+        
+    }
+
+
+    #hébergement:nth-child(1)
+    {
+        flex: 2;  
+    }
+
+    #activités:nth-child(2)
+    {
+        flex: 2;
+    }
+
+    #inscription: nth-child(3)
+    {
+        flex: 1;
+        position: top;
+    }
+
+    li{
+        text-align: center;
+    }
+        
+    a{
+        
+    }
+    a:hover {   
+        border-top: none ;
+        padding-top: none;   
+    }
+    #hébergement:hover{
+        border-bottom: 2px solid #0065fc;
+        margin: 0px;
+    }
+
+    #activités:hover{
+        border-bottom: 2px solid #0065fc;
+        margin: 0px;
+    }
+
+    
+}
