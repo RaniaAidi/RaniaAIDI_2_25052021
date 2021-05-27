@@ -5,47 +5,41 @@ body {
 }
 
 #bloc_page {
-    width: auto; 
-    height: auto;
-    margin: 3%;
+    width: 95%;
+    margin: auto;
 }
+    
 
 /*Header*/
 
-#logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-direction: row;
-    border: 1px solid red;
+
+header{
+    display: flex; /* pour les mettre sur la meme ligne*/
+    justify-content: space-between; /* pour les mettre l'un à l'opposé de l'autre*/
 }
 
 nav {   
-    display: flex;
-    margin: 0px, 
-    border: 1px solid blue;
-    
+    display: inline-block; /* pour mettre la navigation en ligne et plus les uus les uns en dessous des autres*/
+    align-items: space-between;/*pour espacer les éléments de la nav.*/
+  
 } 
-
-nav ul{
-    margin: auto;
-    list-style-type: none;
-    border: 1px solid rgb(110, 110, 1);
+ul{
+    display: flex;
+    padding: 0px;
+    
     
 }
 
 nav li {
     display: inline-block;
     font-size: smaller;
-    border: 1px solid black;
+    padding: 20px;
+    margin: 5px;
     
- }
-
- nav a{
-     color: #0065FC;
-
- }
-
- 
-
+}
+    
+a:hover {
+    border-top: 2px solid #0065fc;
+    padding-top: 30px;
+}
 
