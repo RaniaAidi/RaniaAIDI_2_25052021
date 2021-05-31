@@ -2,12 +2,11 @@
 
 body {
     font-family: raleway;
-}
-
-#bloc_page {
-    width: 95%;
+    width: auto;
     margin: auto;
 }
+
+
     
 
 /*Header*/
@@ -16,20 +15,18 @@ body {
 header{
     display: flex; /* pour les mettre sur la meme ligne*/
     justify-content: space-between; /* pour les mettre l'un à l'opposé de l'autre*/
+    
 }
 
-nav {   
-    display: inline-block; /* pour mettre la navigation en ligne et plus les uus les uns en dessous des autres*/
-    align-items: space-between;/*pour espacer les éléments de la nav.*/
-} 
 
-ul{
+.navigation{
     display: flex;
     padding: 0px;  
 }
 
-li {
+nav li {
     display: inline-block;
+    align-items: space-between;
     font-size: smaller;
     padding: 20px;
     margin: 5px;  
@@ -48,23 +45,30 @@ a:link {
 } 
 
 
-@media screen and (max-width: 1280px)
+
+
+@media screen and (max-width: 1024px)
+    
 {
+    body{
+        overflow: scroll;
+    }
+    
     header{
         display: inline-block;
-        
+        vertical-align: middle;
     }
-
 
     #logo{
         display: none;
     }
 
     nav {
+        display:flex;
 
     }
 
-    ul{
+    .navigation{
         background-image: url("images/logo/Reservia.svg") ;
         background-repeat: no-repeat;
         background-position: top 10px left;
@@ -100,8 +104,8 @@ a:link {
         
     }
     a:hover {   
-        border-top: none ;
-        padding-top: none;   
+        border-top: none ;  
+        padding: none;
     }
     #hébergement:hover{
         border-bottom: 2px solid #0065fc;
